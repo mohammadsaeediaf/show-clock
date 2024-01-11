@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock-wrapper {
+  width: 500px;
+  height: 500px;
+  border: 20px solid #235469;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+}
+
+.clock-wrapper .point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #405721;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hour {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  color: #333;
+}
